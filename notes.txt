@@ -1,0 +1,2 @@
+ffmpeg: CLI to work with video files
+fluent-ffmpeg: module to work with ffmpeg API
