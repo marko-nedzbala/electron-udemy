@@ -15,8 +15,14 @@
     </form>
 
     <script>
+        const electron = require('election');
+        const { ipcRenderer } = electron;
+
         document.querySelector('form').addEventListener('submit', () => {
             event.preventDefault();
+
+            const { value } = document.querySelector('input');
+            ipcRenderer.send('todo:add', value);
 
             
         });
